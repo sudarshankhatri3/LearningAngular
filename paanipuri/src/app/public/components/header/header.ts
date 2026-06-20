@@ -1,16 +1,17 @@
 import { Component,signal } from '@angular/core';
+import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [Footer],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
 export class Header {
-  isMenuOpen=signal<boolean>(false);
+  isOpenMenu=signal<boolean>(false);
 
 
   toggle(){
-    this.isMenuOpen.update(value=>!value);
+    this.isOpenMenu.update(value=>!value);
   }
 }
