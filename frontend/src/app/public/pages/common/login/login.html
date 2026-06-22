@@ -73,4 +73,12 @@
 
 
 <p>Change Detection</p>
-<input type="text" [formControle]="hello">
+<p>FirstName:</p>
+<input type="text" [formControl]="firstName">
+<p>FirstName::{{firstName.value}}</p>
+<p>Last Name::</p>
+<input type="text" [formControl]="lastName">
+<p>Last Name::{{lastName.value}}</p>
+<p>Email::</p>
+<input type="text" [formControl]="email">
+<p>Email::{{email.value}}</p>

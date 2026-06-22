@@ -15,11 +15,25 @@ export class Login {
   //   password:''
   // };
 
-  const data=new FormControl<string|null>('');
-  console.log(data.value);
+  firstName=new FormControl<string|null>('');
+  lastName=new FormControl<string|null>('');
+  email=new FormControl<string|null>('');
 
-  data.update('sudarshan');
-  console.log(data.value);
+  
+  constructor(){
+    console.log(this.firstName.value)
+  
+
+    this.firstName.setValue('sudarshan')
+    console.log(this.firstName.value)
+
+
+    this.lastName.setValue('khatri')
+    console.log(this.lastName.value)
+
+    this.email.setValue('khatrisudarshan360@gmail.com')
+    console.log(this.email.value)
+  }
 
 
 
